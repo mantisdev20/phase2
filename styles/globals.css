@@ -105,3 +105,27 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Media query for small screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+}
+
+/* Media query for medium screens (min-width: 768px) and (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+/* Media query for large screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+}

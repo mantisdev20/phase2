@@ -10,6 +10,8 @@ import CloseIcon from '@mui/icons-material/Close'
 import theme from '../../src/theme'
 import Link from 'next/link'
 import LoginButton from './loginButton'
+import Logo from '../../public/Logo.png'
+import Image from 'next/image'
 
 interface Props {
     window?: () => Window;
@@ -29,9 +31,12 @@ export default function ButtonAppBar(props: Props) {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Mantis
-                    </Typography>
+                    <Box sx={{ flexGrow: 1}} >
+                    <Image 
+                    alt='logo' 
+                    src={Logo} 
+                    className='logo'/>
+                    </Box>
                     <IconButton
                         size="large"
                         edge="start"
