@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "antd": "^5.4.7"
+    "antd": "^5.4.7",
+    "firebase-admin": "^11.8.0"
   }
 }
